@@ -31,8 +31,8 @@ public class Shoot : MonoBehaviour
         if (spawner.Instance.poolobjects.Count <= 0)
             return;
         GameObject bullet = spawner.Instance.poolobjects[0];
-        bullet.transform.position = shootpoint.position;
-        bullet.transform.localRotation = shootpoint.localRotation;
+        bullet.transform.localPosition = shootpoint.position;
+        bullet.transform.localRotation = shootpoint.rotation;
         spawner.Instance.poolobjects.Remove(bullet);
         spawner.Instance.shootobject.Add(bullet);
         bullet.SetActive(true);

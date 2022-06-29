@@ -14,14 +14,12 @@ public class spawner : MonoBehaviour
         {
             Instance = this;
         }
-        
     }
     // Start is called before the first frame update
     void Start()
     {
         for (int i = 0; i < numberofammo; i++)
         {
-            Debug.Log(gameObject.name + " : " + i);
             GameObject bullets = Instantiate(projectile, transform, false);
             poolobjects.Add(bullets);
         }

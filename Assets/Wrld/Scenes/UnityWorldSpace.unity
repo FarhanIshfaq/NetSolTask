@@ -832,7 +832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forwardThrustForce: 40
   turnForceMultiplier: 500
-  maxSpeed: 400
+  maxSpeed: 200
 --- !u!54 &6601020438212055470
 Rigidbody:
   m_ObjectHideFlags: 0

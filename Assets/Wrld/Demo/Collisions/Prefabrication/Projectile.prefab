@@ -128,8 +128,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RigidbodyProjectile: 0
-  Speed: 500
-  SpeedMax: 500
+  Speed: 1000
+  SpeedMax: 1000
   SpeedMult: 1
   Lifetime: 10
   Target: {fileID: 0}
