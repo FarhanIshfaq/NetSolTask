@@ -20,10 +20,10 @@ public class BuildingAltitudePicking : MonoBehaviour
 
     IEnumerator Example()
     {
-        Api.Instance.CameraApi.MoveTo(cameraLocation, distanceFromInterest: 400, headingDegrees: 0, tiltDegrees: 45);
 
         while (true)
         {
+             Api.Instance.CameraApi.MoveTo(cameraLocation, distanceFromInterest: 400, headingDegrees: 0, tiltDegrees: 45);
             yield return new WaitForSeconds(4.0f);
 
             MakeBox(boxLocation1);
@@ -46,7 +46,6 @@ public class BuildingAltitudePicking : MonoBehaviour
             Destroy(boxAnchor, 2.0f);
         }
     }
-
     private void OnDisable()
     {
         StopAllCoroutines();

@@ -41,7 +41,11 @@ public class Projectile : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        ResetBullet();
+        if (collision.gameObject.tag != "Bullet")
+        {
+            Debug.Log(collision.gameObject.name);
+            ResetBullet();
+        }
     }
     public void ResetBullet()
     {

@@ -20,7 +20,7 @@ public class spawner : MonoBehaviour
     {
         for (int i = 0; i < numberofammo; i++)
         {
-            GameObject bullets = Instantiate(projectile, transform, false);
+            GameObject bullets = Instantiate(projectile, Vector3.zero, Quaternion.identity, transform);
             poolobjects.Add(bullets);
         }
     }
